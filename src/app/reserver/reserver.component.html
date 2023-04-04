@@ -1,0 +1,96 @@
+<app-aside-fix></app-aside-fix>
+<div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h2 style="color:orange;">Réservation</h2>
+                        <form class="requires-validation" method="POST" action="">
+                            <div id="parts">
+                                <div id="part1">
+                                    <p style="color:orange; font-weight:500;">Informations du vol:</p>
+                                    <div class="col-md-12">      
+                                        <p style="color:orange;">Numéro de Vol:</p> 
+                                        <input class="form-control" type="text" name="num_vol" value="" style="color:black;" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <br>
+                                        <p style="color:orange;">Avion:</p> 
+                                        <input class="form-control" type="text" name="avion" value="" style="color:black;" required>
+                                    </div>                   
+                                    <div class="col-md-12">
+                                        <br>
+                                        <p style="color:orange;">Départ:</p> 
+                                        <input class="form-control" type="text" name="depart" value="" style="color:black;" required>
+                                    </div>                   
+                                    <div class="col-md-12">
+                                        <br>
+                                        <p style="color:orange;">Arrivée:</p>
+                                        <input class="form-control" type="text" name="arrivee" value="" style="color:black;" required>        
+                                    </div>
+                                    <div class="col-md-12">
+                                        <br>
+                                        <p style="color:orange;">Date de départ: </p> 
+                                        <input class="form-control" type="text" name="date" style="color:black;" value="" style="color:black;" required>                             
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <p style="color:orange;">Classe: </p>
+                                        <input type="radio" class="btn-check" name="classe" id="Economique" autocomplete="off" style="color:black;" value="Economique" required>
+                                        <label class="btn btn-sm btn-outline-secondary" >Economique</label>
+                                        <input type="radio" class="btn-check" name="classe" id="Premium" autocomplete="off" style="color:black;" value="Premium" required>
+                                        <label class="btn btn-sm btn-outline-secondary" >Premium</label>
+                                        <input type="radio" class="btn-check" name="classe" id="Business" autocomplete="off" style="color:black;"  value="Business" required>
+                                        <label class="btn btn-sm btn-outline-secondary" >Business</label>
+                                    <!--<div class="valid-feedback mv-up">Vous avez sélectionné une classe!</div>
+                                    <div class="invalid-feedback mv-up">Merci de sélectionner uen classe!</div>-->
+                                </div>
+                            </div>
+                            <div id="part2">
+                                <p style="color:orange; font-weight:500; white-space:nowrap;">Informations Passager:</p>
+                                <div class="col-md-12">
+                                    <p style="margin-left:15px; white-space:nowrap;">Numéro du passeport</p>
+                                    <input class="form-control" type="text" name="pass"  style="color:black;" required>
+                                </div>
+                                <div class="col-md-12"><br>
+                                    <p style="margin-left:15px; white-space:nowrap;">Nom</p>
+                                    <input class="form-control" type="text" name="lastName"  style="color:black;" required>
+                                </div>
+                                <div class="col-md-12"><br>
+                                    <p style="margin-left:15px; white-space:nowrap;">Prénom</p>
+                                    <input class="form-control" type="text" name="firstName" style="color:black;" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p style="margin-left:15px; white-space:nowrap;">Date de naissance</p>
+                                    <input class="form-control" type="date" name="dateNaissance" style="color:black;" style="color:black;" required>                             
+                                </div>
+                                <div class="col-md-12"><br>
+                                    <p style="margin-left:15px; white-space:nowrap;">Nationnalité</p>
+                                    <input class="form-control" type="text" name="nationalite"  style="color:black;" required>
+                                </div>
+                                <div class="col-md-12"><br>
+                                    <p style="margin-left:15px; white-space:nowrap;">Numéro de téléphone</p>
+                                    <input class="form-control" type="text" name="telephone" placeholder="Ex: +212 xx xx xx" style="color:black;" required>
+                                </div>
+                                <div class="col-md-12"><br>
+                                    <p style="margin-left:15px; white-space:nowrap;">Adresse Email</p>
+                                    <input class="form-control" type="text" name="email" placeholder="Ex: xxxx@xx.net" style="color:black;" required>
+                                </div>                      
+                            </div>
+                        </div>
+                        <div class="form-check"><br>
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" style="color:black;" required>                        
+                            <label class="form-check-label">Je confirme toutes les données saisies</label>
+                           <!-- <div class="invalid-feedback">Merci de confirmer que toutes les données saisises sont correctes!</div>-->
+                        </div>        
+                        <br>         
+                        <div style="display:flex;" class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Valider</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
